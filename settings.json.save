@@ -1,0 +1,63 @@
+{
+    "public":{
+        "chainName": "Exzo Network",
+        "chainId": "ethermint-1337",
+        "gtm": "{Add your Google Tag Manager ID here}",
+        "slashingWindow": 10000,
+        "uptimeWindow": 250,
+        "initialPageSize": 30,
+        "secp256k1": false,
+        "bech32PrefixAccAddr": "eth1zpwa6eda78me9qfygul2nkclzv2lt6pgc3s773",
+        "bech3eth1zpwa6eda78me9qfygul2nkclzv2lt6pgc3s7732PrefixAccPub": "ethpub17weu6qepqdzyvlvwj7yjljq04wvqe78x03gykk76t0fndcp86xl6dpa3y7gkjun7ukm",
+        "bech32PrefixValAddr": "F6035CD58FDF83E49EC3A55AB88844A8D035BBD4",
+        "bech32PrefixValPub": "X9w+3KQ/atzEgA/yp9wYyxRLNo48tAmqGhGJvOfkGvQ=",
+        "bech32PrefixConsAddr": "cosmosvalcons",
+        "bech32PrefixConsPub": "cosmosvalconspub",
+        "bondDenom": "exzo",
+        "powerReduction": 1000000,
+        "coins": [
+            {
+                "denom": "exzo",
+                "amount": "10000000000"
+            },
+            {
+                "denom": "stake",
+                "amount": "1000000000"
+            }
+        ],
+        "modules": {
+            "supply": true,
+            "minting": false,
+            "gov": true,
+            "distribution": false
+        },
+        "gasPrice": 0.02,
+        "coingeckoId": "cosmos"
+    },
+    "genesisFile": "http://143.198.51.224:3000/genesis.json",
+    "remote":{
+        "rpc":"http://localhost:26657",
+        "lcd":"http://localhost:26657"
+    },
+    "debug": {
+        "startTimer": true,
+	"readGenesis": true
+    },
+    "params":{
+        "startHeight": 0,
+        "defaultBlockTime": 5000,
+        "validatorUpdateWindow": 300,
+        "blockInterval": 15000,
+        "transactionsInterval": 18000,
+        "keybaseFetchingInterval": 18000000,
+        "consensusInterval": 1000,
+        "statusInterval":7500,
+        "signingInfoInterval": 1800000,
+        "proposalInterval": 5000,
+        "missedBlocksInterval": 60000,
+        "delegationInterval": 900000
+    }
+}
+
+
+

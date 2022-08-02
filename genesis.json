@@ -1,0 +1,234 @@
+{
+  "genesis_time": "2022-07-08T08:01:17.244832952Z",
+  "chain_id": "ethermint-1337",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age_num_blocks": "100000",
+      "max_age_duration": "172800000000000"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    }
+  },
+  "app_hash": "",
+  "app_state": {
+    "upgrade": {},
+    "bank": {
+      "send_enabled": true
+    },
+    "mint": {
+      "minter": {
+        "inflation": "0.130000000000000000",
+        "annual_provisions": "0.000000000000000000"
+      },
+      "params": {
+        "mint_denom": "stake",
+        "inflation_rate_change": "0.130000000000000000",
+        "inflation_max": "0.200000000000000000",
+        "inflation_min": "0.070000000000000000",
+        "goal_bonded": "0.670000000000000000",
+        "blocks_per_year": "6311520"
+      }
+    },
+    "slashing": {
+      "params": {
+        "signed_blocks_window": "100",
+        "min_signed_per_window": "0.500000000000000000",
+        "downtime_jail_duration": "600000000000",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000"
+      },
+      "signing_infos": {},
+      "missed_blocks": {}
+    },
+    "distribution": {
+      "params": {
+        "community_tax": "0.020000000000000000",
+        "base_proposer_reward": "0.010000000000000000",
+        "bonus_proposer_reward": "0.040000000000000000",
+        "withdraw_addr_enabled": true
+      },
+      "fee_pool": {
+        "community_pool": []
+      },
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": null,
+      "votes": null,
+      "proposals": null,
+      "deposit_params": {
+        "min_deposit": [
+          {
+            "denom": "stake",
+            "amount": "10000000"
+          }
+        ],
+        "max_deposit_period": "172800000000000"
+      },
+      "voting_params": {
+        "voting_period": "172800000000000"
+      },
+      "tally_params": {
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto": "0.334000000000000000"
+      }
+    },
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      },
+      "accounts": [
+        {
+          "type": "ethermint/EthAccount",
+          "value": {
+            "address": "eth1zpwa6eda78me9qfygul2nkclzv2lt6pgc3s773",
+            "eth_address": "0x105ddD65Bdf1f7928124473EA9DB1F1315F5e828",
+            "coins": [
+              {
+                "denom": "exzo",
+                "amount": "10000000000"
+              },
+              {
+                "denom": "stake",
+                "amount": "1000000000"
+              }
+            ],
+            "public_key": "",
+            "account_number": 0,
+            "sequence": 0,
+            "code_hash": "c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+          }
+        }
+      ]
+    },
+    "crisis": {
+      "constant_fee": {
+        "denom": "stake",
+        "amount": "1000"
+      }
+    },
+    "supply": {
+      "supply": []
+    },
+    "evm": {
+      "accounts": [],
+      "txs_logs": [],
+      "chain_config": {
+        "homestead_block": "0",
+        "dao_fork_block": "0",
+        "dao_fork_support": true,
+        "eip150_block": "0",
+        "eip150_hash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "eip155_block": "0",
+        "eip158_block": "0",
+        "byzantium_block": "0",
+        "constantinople_block": "0",
+        "petersburg_block": "0",
+        "istanbul_block": "0",
+        "muir_glacier_block": "0",
+        "yoloV2_block": "-1",
+        "ewasm_block": "-1"
+      },
+      "params": {
+        "evm_denom": "exzo",
+        "enable_create": true,
+        "enable_call": true,
+        "extra_eips": null
+      }
+    },
+    "evidence": {
+      "params": {
+        "max_evidence_age": "120000000000"
+      },
+      "evidence": []
+    },
+    "genutil": {
+      "gentxs": [
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "mymoniker",
+                    "identity": "",
+                    "website": "",
+                    "security_contact": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "eth1zpwa6eda78me9qfygul2nkclzv2lt6pgc3s773",
+                  "validator_address": "ethvaloper1zpwa6eda78me9qfygul2nkclzv2lt6pgxrw2s0",
+                  "pubkey": "ethvalconspub1zcjduepqtlwrah9y8a4de3yqple20hqcev2ykd5w8j6qn2s6zxymeelyrt6qrpduc3",
+                  "value": {
+                    "denom": "stake",
+                    "amount": "100000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "ethermint/PubKeyEthSecp256k1",
+                  "value": "A0RGfY6XiS/ID6uYDPjmfFBLW9pb0zbgJ9G/poexJ5Fp"
+                },
+                "signature": "cWAEYSlm8Eh8zjxAii7z+YTwl9VGWk+zidiMS/qk3pN9FxRu7pyAeu5hf7sZCoyZT2EeDGI7ryEh5Ll0BXH8MwE="
+              }
+            ],
+            "memo": "3b6ee13729e8eb95cffb50d4eb01360d6eb1613c@143.198.51.224:26656"
+          }
+        }
+      ]
+    },
+    "staking": {
+      "params": {
+        "unbonding_time": "1814400000000000",
+        "max_validators": 100,
+        "max_entries": 7,
+        "historical_entries": 0,
+        "bond_denom": "stake"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": null,
+      "validators": null,
+      "delegations": null,
+      "unbonding_delegations": null,
+      "redelegations": null,
+      "exported": false
+    },
+    "params": null
+  }
+}

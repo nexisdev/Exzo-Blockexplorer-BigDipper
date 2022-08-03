@@ -27,7 +27,7 @@
     "ledger-cosmos-js": "^2.1.8",
     "lodash": "^4.17.20",
     "meteor-node-stubs": "^0.4.1",
-    "moment": "^2.27.0",
+    "moment": "^2.29.4",
     "moment-timezone": "^0.5.32",
     "numbro": "^2.3.2",
     "plottable": "^3.9.0",
